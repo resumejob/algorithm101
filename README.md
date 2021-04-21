@@ -1,6 +1,3 @@
-# algorithm101
-Algorithm, 算法基础
-
 ## 目录
 - 算法基础
     - 时间复杂度
@@ -25,9 +22,10 @@ Algorithm, 算法基础
 - 参考资料
     - Algorithms and Data Structures Cheatsheet
 
-### 算法基础
+## 算法基础
 
-#### 时间复杂度
+### ⨭ 时间复杂度
+
 | 类型        | 表达式      |  例子       | 代码示例    |
 | ----------- | ----------- | ----------- | ----------- |
 | 常数        | O(1)        | <ul><li>加减乘除</li><li>获取元素属性</li></ul>        | `add()`     |
@@ -39,7 +37,7 @@ Algorithm, 算法基础
 | 多项式      | O(n^c)      | <ul><li>遍历数组子对（长度不定）</li><li>多重遍历</li></ul>        | <pre>for (i = 1 to Array.length, i += 1) <br>    for (i = 1 to Array.length, i += 1) <br>        ....... </br>        add()</pre>         |
 | 指数        | O(2^n)      | <ul><li>遍历所有子集合</li><li>回溯算法</li></ul>        | <pre>func recursion() <br>    for (i = 1 to 10) <br>        recursion() </pre>         |
 
-#### 排序算法
+### ⨦ 排序算法
 
 | 类型        | 最好时间    |  平均时间   | 最坏时间    | 空间        |  稳定性     |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -51,7 +49,7 @@ Algorithm, 算法基础
 | 桶排序      | O(n)        | O(n)        | O(n^2)      | O(n)        |  稳定       |
 
 
-### 数据结构
+### ⦜ 数据结构
 
 | 类型（平均）| 获取元素    |  查找元素   | 插入元素    |
 | ----------- | ----------- | ----------- | ----------- |
@@ -65,7 +63,7 @@ Algorithm, 算法基础
 | 二叉搜索树  | O(logn)     | O(logn)     | O(logn)     |
 | 跳表        | O(logn)     | O(logn)     | O(logn)     |
 
-#### 递归公式
+### ⦠ 递归公式
 
 | 类型             | T(n)        |  例子       |
 | -----------      | ----------- | ----------- |
@@ -75,7 +73,7 @@ Algorithm, 算法基础
 | T(n)=T(n−1)+n    | O(n^2)      | 插入排序    |
 | T(n)=2T(n−1)+1   | O(2^n)      | 回溯算法    |
 
-#### 主定理
+### ⧅ 主定理
 
 当 a≥1, b≥2, c>0 且 T(n) 在非负区间内满足 T(n) = aT(n/b)+O(nc)，假定 T(0)=0，T(1)=O(1)，则
 
@@ -85,7 +83,7 @@ Algorithm, 算法基础
 | c=log(b)a        | O(n^c * logn)  |
 | c>log(b)a        | O(n^c)         |
 
-#### 表达式
+### ⦧ 表达式
 
 | 类型             | 表达式           | 结果            |
 | -----------      | -----------      | -----------     |
@@ -95,13 +93,13 @@ Algorithm, 算法基础
 | 等比数列         | n1+n2+n3+n4..n   | n1(1-q^n)/(1-q) |
 | 卡特兰数         |                  |                 |
 
-### 链表
+## 链表
 
-![linked-list]()
+![linked-list](https://raw.githubusercontent.com/resumejob/algorithm101/main/imgs/linked-list.png)
 
-### 二叉树
+## 二叉树
 
-#### 类型
+### ⧉ 类型
 
 | 类型             | 简介                                    |
 | -----------      | -----------                             |
@@ -109,9 +107,9 @@ Algorithm, 算法基础
 | 满二叉树         | 每个节点有零或者两个子节点              |
 | 完美二叉树       | 所有节点都被填满                        |
 
-![binary-tree]()
+![binary-tree](https://raw.githubusercontent.com/resumejob/algorithm101/main/imgs/tree.png)
 
-#### 遍历方式
+### ⨦ 遍历方式
 
 | 类型             | 例子                                    |
 | -----------      | -----------                             |
@@ -120,12 +118,12 @@ Algorithm, 算法基础
 | 后序遍历         | 左节点 -> 右节点 -> 父节点              |
 | 层序遍历         | 第一层 -> 第二层 -> 第三层              |
 
-![tree-1]()
+![tree-1](https://raw.githubusercontent.com/resumejob/algorithm101/main/imgs/tree-1.png)
 
-![tree-2]()
+![tree-2](https://raw.githubusercontent.com/resumejob/algorithm101/main/imgs/tree-2.png)
 
 
-### 图论
+## 图论
 
 | 问题类型            | 算法        | 要求        | 时间复杂度  |
 | -----------         | ----------- | ----------- | ----------- |
